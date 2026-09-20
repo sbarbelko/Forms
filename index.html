@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/index.js"></script>
   </head>
@@ -22,6 +28,7 @@
               placeholder="first name"
               autofocus
               pattern="[A-Z][a-z]{1,19}"
+              required
             />
             <input
               type="text"
@@ -33,29 +40,19 @@
         </label>
         <label>
           <span>Your email</span>
-          <input type="email" name="email" placeholder="your_mail@mail.com" />
+          <input
+            type="email"
+            name="email"
+            placeholder="your_mail@mail.com"
+            required
+          />
         </label>
         <label>
           <span>Phone *</span>
           <div>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="099"
-              pattern="\+380\d{9}"
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="123"
-              pattern="\+380\d{9}"
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="4567"
-              pattern="\+380\d{9}"
-            />
+            <input type="tel" name="phone" placeholder="099" pattern="0\d{2}" />
+            <input type="tel" name="phone" placeholder="123" pattern="\d{3}" />
+            <input type="tel" name="phone" placeholder="4567" pattern="\d{4}" />
           </div>
         </label>
         <label>
@@ -66,7 +63,13 @@
         </label>
         <label>
           <span>Message *</span>
-          <input type="textarea" name="mess" />
+          <textarea
+            name="mess"
+            rows="4"
+            required
+            minlength="10"
+            maxlength="120"
+          ></textarea>
         </label>
         <button type="submit" class="submitBtn">SUBMIT FORM</button>
       </form>

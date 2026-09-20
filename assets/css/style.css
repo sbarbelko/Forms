@@ -3,7 +3,8 @@
 }
 
 html {
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -34,7 +35,7 @@ label {
 }
 
 label > span {
-  min-width: 140px;
+  min-width: 150px;
 }
 
 label > div {
@@ -44,7 +45,9 @@ label > div {
   flex: 1;
 }
 
-input {
+input,
+select,
+textarea {
   flex: 1;
   background-color: #f7f4ef;
   border: 1px solid #e5ded4;
@@ -76,4 +79,16 @@ input {
   border-color: #ef4444;
   background-color: #fef2f2;
   color: #991b1b;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 10px 0;
 }
