@@ -25,7 +25,7 @@
             <input
               type="text"
               name="firstName"
-              placeholder="first name"
+              placeholder="firstName"
               autofocus
               pattern="[A-Z][a-z]{1,19}"
               required
@@ -44,6 +44,7 @@
             type="email"
             name="email"
             placeholder="your_mail@mail.com"
+            pattern="(?=.{4,}).*@.*"
             required
           />
         </label>
@@ -51,8 +52,8 @@
           <span>Phone *</span>
           <div>
             <input type="tel" name="phone" placeholder="099" pattern="0\d{2}" />
-            <input type="tel" name="phone" placeholder="123" pattern="\d{3}" />
-            <input type="tel" name="phone" placeholder="4567" pattern="\d{4}" />
+            <input type="tel" name="phone1" placeholder="123" pattern="\d{3}" />
+            <input type="tel" name="phone2" placeholder="4567" pattern="\d{4}" />
           </div>
         </label>
         <label>
