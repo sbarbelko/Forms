@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #f7f4ef;
+  color: #2c221e;
+}
+
+article {
+  display: flex;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 200px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  color: #786c64;
+}
+
+label > span {
+  min-width: 140px;
+}
+
+label > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+}
+
+input {
+  flex: 1;
+  background-color: #f7f4ef;
+  border: 1px solid #e5ded4;
+  color: #2c221e;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.submitBtn {
+  border: none;
+  background-color: #e07a5f;
+  color: #ffffff;
+  align-self: center;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.valid {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.invalid {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+  color: #991b1b;
+}

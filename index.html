@@ -10,24 +10,26 @@
   </head>
   <body>
     <article>
-      <form action="#">
+      <form action="#" class="contactForm">
         <h1>Contact form</h1>
         <p>Please fill in your information and we'll be sending your order.</p>
         <label>
           <span>Your name</span>
-          <input
-            type="text"
-            name="firstName"
-            placeholder="first name"
-            autofocus
-            pattern="[A-Z][a-z]{1,19}"
-          />
-          <input
-            type="text"
-            name="surname"
-            placeholder="last name"
-            pattern="[A-Z][a-z]{1,19}"
-          />
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="first name"
+              autofocus
+              pattern="[A-Z][a-z]{1,19}"
+            />
+            <input
+              type="text"
+              name="surname"
+              placeholder="last name"
+              pattern="[A-Z][a-z]{1,19}"
+            />
+          </div>
         </label>
         <label>
           <span>Your email</span>
@@ -35,12 +37,26 @@
         </label>
         <label>
           <span>Phone *</span>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="+380991234567"
-            pattern="\+380\d{9}"
-          />
+          <div>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="099"
+              pattern="\+380\d{9}"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="123"
+              pattern="\+380\d{9}"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="4567"
+              pattern="\+380\d{9}"
+            />
+          </div>
         </label>
         <label>
           <span>Message subject *</span>
@@ -52,7 +68,7 @@
           <span>Message *</span>
           <input type="textarea" name="mess" />
         </label>
-        <button type="submit">SUBMIT FORM</button>
+        <button type="submit" class="submitBtn">SUBMIT FORM</button>
       </form>
     </article>
   </body>
