@@ -14,6 +14,7 @@ body {
 
 article {
   display: flex;
+  padding: 10px;
 }
 
 .contactForm {
@@ -70,7 +71,7 @@ article {
   max-width: 300px;
   width: 100%;
   padding: 10px 20px;
-  margin: 15px 0;
+  margin: 10px 0;
   border-radius: 10px;
   font-weight: 400;
 }
@@ -97,4 +98,9 @@ article {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 10px 0;
+}
+
+.borderWrapper {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #786c64;
 }
