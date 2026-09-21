@@ -1,5 +1,7 @@
 "use strict";
 
+const results = [];
+
 const INPUTS_REG_EXP = {
   firstName: /^[A-Z][a-z]{1,19}$/,
   surname: /^[A-Z][a-z]{1,19}$/,
@@ -9,13 +11,11 @@ const INPUTS_REG_EXP = {
   phone2: /^\d{4}$/,
 };
 const inputs = document.querySelectorAll("input");
-console.log(INPUTS_REG_EXP);
 inputs.forEach((i) => i.addEventListener("input", inputHandler));
 
 console.log("inputs", inputs);
 
 function inputHandler() {
-  console.log(this.value);
   if (INPUTS_REG_EXP[this.name].test(this.value)) {
     this.classList.add("valid");
     this.classList.remove("invalid");
@@ -24,3 +24,25 @@ function inputHandler() {
     this.classList.remove("valid");
   }
 }
+
+const contactForm = document.querySelector(".contactForm");
+contactForm.addEventListener("submit", submitHandler);
+
+function submitHandler(e) {
+  e.preventDefault();
+
+  const formEl = e.target.elements;
+  const phoneFull = `+380${formEl.phone.value}${formEl.phone1.value}${formEl.phone2.value}`;
+
+  const result = {
+    name: `${formEl.firstName.value} ${formEl.surname.value}`,
+    phone: phoneFull,
+    email: `${formEl.email.value}`,
+    messSubj: `${formEl.messSubj.value}`,
+    message: `${formEl.mess.value}`,
+  };
+
+  results.push(result);
+}
+
+console.log("results", results);
