@@ -35,7 +35,13 @@ article {
 }
 
 .contactForm > label > span {
+  display: flex;
   min-width: 150px;
+  align-items: center;
+}
+.contactForm > label:last-of-type > span {
+  align-self: flex-start;
+  padding-top: 10px;
 }
 
 .contactForm > label > div {
