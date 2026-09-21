@@ -26,7 +26,7 @@ article {
   background-color: #ffffff;
 }
 
-label {
+.contactForm > label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -34,20 +34,20 @@ label {
   color: #786c64;
 }
 
-label > span {
+.contactForm > label > span {
   min-width: 150px;
 }
 
-label > div {
+.contactForm > label > div {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   flex: 1;
 }
 
-input,
-select,
-textarea {
+.contactFormInp,
+.contactFormSel,
+.contactFormTextarea {
   flex: 1;
   background-color: #f7f4ef;
   border: 1px solid #e5ded4;
@@ -81,13 +81,13 @@ textarea {
   color: #991b1b;
 }
 
-h1 {
+.contactForm > h1 {
   font-size: 1.6rem;
   font-weight: 600;
   padding: 10px 0;
 }
 
-p {
+.contactForm > p {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 10px 0;

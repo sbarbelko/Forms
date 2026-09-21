@@ -23,6 +23,7 @@
           <span>Your name</span>
           <div>
             <input
+              class="contactFormInp"
               type="text"
               name="firstName"
               placeholder="firstName"
@@ -31,6 +32,7 @@
               required
             />
             <input
+              class="contactFormInp"
               type="text"
               name="surname"
               placeholder="last name"
@@ -41,6 +43,7 @@
         <label>
           <span>Your email</span>
           <input
+            class="contactFormInp"
             type="email"
             name="email"
             placeholder="your_mail@mail.com"
@@ -51,14 +54,32 @@
         <label>
           <span>Phone *</span>
           <div>
-            <input type="tel" name="phone" placeholder="099" pattern="0\d{2}" />
-            <input type="tel" name="phone1" placeholder="123" pattern="\d{3}" />
-            <input type="tel" name="phone2" placeholder="4567" pattern="\d{4}" />
+            <input
+              class="contactFormInp"
+              type="tel"
+              name="phone"
+              placeholder="099"
+              pattern="0\d{2}"
+            />
+            <input
+              class="contactFormInp"
+              type="tel"
+              name="phone1"
+              placeholder="123"
+              pattern="\d{3}"
+            />
+            <input
+              class="contactFormInp"
+              type="tel"
+              name="phone2"
+              placeholder="4567"
+              pattern="\d{4}"
+            />
           </div>
         </label>
         <label>
           <span>Message subject *</span>
-          <select name="messSubj">
+          <select class="contactFormSel" name="messSubj">
             <option value="Other">Other</option>
             <option value="Feedback">Feedback</option>
             <option value="Support">Support</option>
@@ -67,6 +88,7 @@
         <label>
           <span>Message *</span>
           <textarea
+            class="contactFormTextarea"
             name="mess"
             rows="4"
             required

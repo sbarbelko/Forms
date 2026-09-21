@@ -33,13 +33,14 @@ function submitHandler(e) {
 
   const formEl = e.target.elements;
   const phoneFull = `+380${formEl.phone.value}${formEl.phone1.value}${formEl.phone2.value}`;
+  const mess = formEl.mess.value.replace(/\s+/g, " ").replace(/^\s|\s$/g, "");
 
   const result = {
     name: `${formEl.firstName.value} ${formEl.surname.value}`,
     phone: phoneFull,
     email: `${formEl.email.value}`,
     messSubj: `${formEl.messSubj.value}`,
-    message: `${formEl.mess.value}`,
+    message: `${mess}`,
   };
 
   results.push(result);
